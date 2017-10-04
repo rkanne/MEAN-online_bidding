@@ -1,0 +1,47 @@
+#product{
+	width: 100px;
+	height: 100px;
+	border: 2px solid black;
+	display: inline-block;
+	padding: 20px;
+	margin-left: 50px;
+}
+#txt_bid1{
+	margin: 5px;
+	margin-left: 50px;
+}
+#txt_bid2{
+	margin: 5px;
+	margin-left: 21px;
+}
+#txt_bid3{
+	margin: 5px;
+	margin-left: 23px;
+}
+#txtsearch{
+	margin-left: 50px;
+}
+#search{
+	margin-left: 65px;
+}
+#product1{
+	width: 100px;
+	height: 100px;
+	border: 2px solid black;
+	display: inline-block;
+	padding: 20px;
+	margin-left: 50px;
+	overflow-y: scroll;
+}
+#product_bid{
+	width: 100px;
+	height: 100px;
+	border: 2px solid black;
+	display: inline-block;
+	margin-top: 50px;
+	padding: 20px;
+	margin-left: 15px;
+}
+#inser_bid{
+	margin-left: 15px;
+}

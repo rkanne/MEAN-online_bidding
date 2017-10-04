@@ -1,0 +1,24 @@
+<div ng-controller='resultController'>
+<div>
+<h3>{{currentUser}} ended the Bid</h3>
+<h2>Highest Bigger per Product: </h2>
+<div id="product1">
+	<p ng-repeat="bid in show_results" ng-if="bid.product_id==1  ">
+	<span>{{bid.user_name}}: $ {{bid.bid}}</span>
+	</p>
+	</div>
+	<div id="product1">
+	<p ng-repeat="bid in show_results" ng-if="bid.product_id==2" >
+	<span>{{bid.user_name}}: $ {{bid.bid}}</span>
+	</p>
+	
+	</div>
+	<div id="product1">
+	<p ng-repeat="bid in show_results " ng-if="bid.product_id==3">
+	<span>{{bid.user_name}}: $ {{bid.bid}}</span>
+	</p>
+	</div>	
+<br>
+	<input type="submit" value="Start Bid" ng-click="start_bid()">
+
+</div>

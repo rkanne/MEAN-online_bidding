@@ -1,0 +1,48 @@
+<div id="wrapper">
+	<div ng-controller='bidsController'>
+		<h4>Welcome, {{currentUser}}!</h4>
+	<h1>Bid Now!!</h1>
+		<p><input type="submit" value = "logout" ng-click="logout()"></p>
+		<br>
+	<div id="products">
+		<div id="product">
+			Product 1
+		</div>
+		<div id="product">
+			Product 2
+
+		</div>
+		<div id="product">
+			Product 3
+		</div>
+		<br>
+		{{message}}
+		<div>
+			<input type="text" id= "txt_bid1" ng-model="new.bid[1]">
+			<input type="submit" value = "bid" ng-click="bid(1)">
+			<input type="text" id="txt_bid2" ng-model="new.bid[2]">
+			<input type="submit" value = "bid" ng-click="bid(2)">
+			<input type="text" id="txt_bid3" ng-model="new.bid[3]">
+			<input type="submit" value = "bid" ng-click="bid(3)">
+		</div>
+		</div>
+	<p>Current Bid! :</p>
+
+	<div id="product1">
+	<p ng-repeat='bid in show_bids  | filter: filter_product1 ' ng-if="bid.product_id==1">{{bid.user_name}}: $ {{bid.bid}}</p>
+	</div>
+	<div id="product1">
+	<p ng-repeat='bid in show_bids  | filter: filter_product2' ng-if="bid.product_id==2">{{bid.user_name}}: $ {{bid.bid}}</p>
+	
+	</div>
+	<div id="product1">
+	<p ng-repeat='bid in show_bids  | filter: filter_product3' ng-if="bid.product_id==3">{{bid.user_name}}: $ {{bid.bid}}</p>
+	</div>				
+	<p id="txtsearch">
+		<input type="text" placeholder="Search" ng-model="filter_product1"> 
+		<input type="text" placeholder="Search" id="search" ng-model="filter_product2">
+		<input type="text" placeholder="Search" id="search" ng-model="filter_product3">
+	</p>		
+	<input type="submit" value="End Bid" ng-click="end()">
+	</div>
+</div>
